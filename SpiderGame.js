@@ -18,7 +18,17 @@ var STRING_WIN = "";
 var showRestartGame = true;
 var cardsAreMoving = false;
 
-if (userLanguage.substring(0,2)=="es")
+if (userLanguage.substring(0, 2) == "pt") {
+	STRING_NEWGAME = "Novo Jogo";
+	STRING_SELECTDIFFICULTY = "Selecione o nível de dificuldade da partida:";
+	STRING_EASY = "F" + String.fromCharCode(225) + String.fromCharCode(231) + "il: Un nipe";
+	STRING_MEDIUM = "M" + String.fromCharCode(233) +"dio: dois naipes";
+	STRING_HARD = "Dif" + String.fromCharCode(237) + String.fromCharCode(231) + "il: quatro naipes";
+	STRING_SCORE = "Pontua" + String.fromCharCode(231) + String.fromCharCode(227) + "o: ";
+	STRING_MOVES = "Movimentos: ";
+	STRING_WIN = String.fromCharCode(161) + "Vit" + String.fromCharCode(243) + "ria!";
+}
+else if (userLanguage.substring(0,2)=="es")
 	{
 	STRING_NEWGAME = "Nuevo juego";
 	STRING_SELECTDIFFICULTY = "Seleccione el nivel de dificultad de la partida:";
@@ -29,7 +39,7 @@ if (userLanguage.substring(0,2)=="es")
 	STRING_MOVES = "Manos: ";
 	STRING_WIN = String.fromCharCode(161) + "Victoria!";
 	}
-	else
+else
 	{
 	STRING_NEWGAME = "New game";
 	STRING_SELECTDIFFICULTY = "Select the game difficulty you want:";
